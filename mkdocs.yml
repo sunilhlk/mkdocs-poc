@@ -1,2 +1,71 @@
-site_name: My Docs
-theme: readthedocs
+site_name: HI 2.0 Release Information
+site_description: Runbooks for deploying and operating HI 2.0
+
+nav:
+  - Home: index.md
+  - '23:01': 
+  - DataEnrichment:
+  - DataExploration:
+    - AzureInfra: AzureInfrastrucre.md
+    - Tenants: environments/tenants.md
+  - Deployment notes:
+    - Overview: deploy/deploy-overview.md
+    - Toolchains: deploy/toolchains.md
+    - FHIR/Keycloak:
+      - FHIR/Keycloak Overview: deploy/fhir-keycloak-overview.md
+      - FHIR: deploy/fhir.md
+      - Keycloak: deploy/keycloak.md
+    - HRI: deploy/hri.md
+    - NiFi: deploy/nifi.md
+    - Interop Adapter: deploy/interop-adapter.md
+    - NAR extension: deploy/nar.md
+    - API Connect: deploy/apic.md
+    - Mbr Mgmt UI: deploy/mm-ui.md
+    - Terraform: deploy/terraform.md
+    - Container registry: deploy/container-registry.md
+  - Tools:
+    - Postman: tools/postman.md
+    - Insomnia: tools/insomnia.md
+    - Kafka Magic: tools/kafka-magic.md
+    - Kubernetes Lens: tools/lens.md
+    - Docker Container Management: tools/docker-desktop.md
+  - Misc items:
+    - Docs: misc/docs.md
+    - New developer setup: misc/developer-setup.md
+    - Misc reference materials: misc/misc-reference.md
+  - Designs:
+    - Consent Manager: designs/consent-manager.md
+    - Trusted Server: designs/endpoints.md
+    - Data Request: designs/data-request.md
+    - MemberManagement:
+      - MemberManagement IDP evaluation: misc/mmappidkeycloak.md
+      - MemberManagement alternate flow Casestudy: misc/mmappidcasestudy.md
+      - MemberManagement APIs: misc/mmapis.md
+      - MemberManagement Development: misc/mmdevelopment.md
+    - FHIR Server Config: designs/fhir-server-config.md
+theme:
+  name: material
+  palette:
+    scheme: default
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+
+copyright: 'Copyright &copy; 2021 IBM Watson Health<br>'
+
+dev_addr: 127.0.0.1:9999
+extra_css:
+  - css/custom_style.css
+extra_javascript:
+  - js/links_in_new_tabs.js
+markdown_extensions:
+  - admonition:
+  - codehilite:
+  - extra:
+  - pymdownx.magiclink:
+  - sane_lists:
+  - smarty:
+  - toc:
+      permalink: True
+  - pymdownx.highlight
+  - pymdownx.superfences
