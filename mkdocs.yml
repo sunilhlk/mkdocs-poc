@@ -4,7 +4,7 @@ repo_name: c17hawke/REPO_NAME
 repo_url: https://github.com/c17hawke/REPO_NAME
 
 theme:
-  name: material
+  name: mkdocs
   features:
     - navigation.tabs
     - navigation.sections
